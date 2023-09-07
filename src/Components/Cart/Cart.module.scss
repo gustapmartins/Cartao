@@ -1,0 +1,113 @@
+.Container {
+    position: absolute;
+    top: -15px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 190px;
+    background-color: #000;
+    border-radius: 0.45rem;
+    margin-bottom: 2rem;
+    background-image: url("https://img.wallpapic-br.com/i8959-323-227/thumb/galaxia-roxos-espaco-sideral-nebulosa-imagem-de-fundo.jpg");
+    background-repeat: no-repeat;
+    box-shadow: 0px 8px 12px rgb(44, 14, 93);
+    cursor: pointer;
+    box-sizing: border-box;
+    z-index: 1;
+
+    &__Box {
+        padding: 16px;
+        height: 100%;
+        box-sizing: border-box; 
+        
+        &__Logo {
+            text-align: end;
+
+            img {
+                width: 60px;
+            }
+        }
+
+        &__Info {
+            color: #FFF;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            span {
+                cursor: auto;
+                text-align: center;
+                font-size: 2rem;
+            }
+
+            &__Infos {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 1.2rem;
+
+                &__Validation {
+                    text-align: start;
+                    z-index: 1;
+
+                    h3 {
+                        cursor: auto;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        margin-top: 0.6rem;
+                    }
+
+                    span {
+                        font-weight: 600;
+                        font-size: 0.9rem;
+                        cursor: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.Back {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+
+    &__Bar {
+        width: 100%;
+        height: 35px;
+        background-color: rgb(18, 18, 18);
+        margin-top: 1.4rem;
+    }
+
+    &__Barlist {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.4rem;
+
+        &__CVV {
+            width: 80%;
+            height: 35px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk_E3NvqUvv4hVK7GkRXeLy6H6YdfBMgup7RW6zQhjILbsIsRaePZ4JYwybjP11jhlehM&usqp=CAU');
+            border-radius: 8px 4px 4px 8px;
+        }
+
+        span {
+            background-color: #FFF;
+            color: rgb(92, 87, 87);
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            border-radius: 0px 4px 4px 0px;
+        }
+    }
+}
